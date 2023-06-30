@@ -10,7 +10,16 @@ print('Division: ', 7 / 2)
 print('Division without the remainder: ', 7 // 2)   # gives without the floating number or without the remaining
 print('Modulus: ', 3 % 2)                           # Gives the remainder
 print ('Division without the remainder: ', 7 // 3)
-print('Exponential: ', 3 ** 2)                     # it means 3 * 3
+print('Exponential: ', 3 ** 2)                      # it means 3 * 3
+
+# Arithmetic operators
+print(2 + 3)                     # addition(+)
+print(3 - 1)                     # subtraction(-)
+print(2 * 3)                     # multiplication(*)
+print(3 / 2)                     # division(/)
+print(3 ** 2)                    # exponential(**)
+print(3 % 2)                     # modulus(%)
+print(3 // 2)                    # Floor division operator(//)
 
 # Floating numbers
 print('Floating Number,PI', 3.14)
@@ -73,12 +82,6 @@ width = 20
 area_of_rectangle = length * width
 print('Area of rectangle:', area_of_rectangle)
 
-# Calculating a weight of an object
-mass = 75
-gravity = 9.81
-weight = mass * gravity
-print(weight, 'N')
-
 print(3 > 2)     # True, because 3 is greater than 2
 print(3 >= 2)    # True, because 3 is greater than 2
 print(3 < 2)     # False,  because 3 is greater than 2
@@ -104,11 +107,11 @@ print('True or False:', True or False)
 # Another way comparison 
 print('1 is 1', 1 is 1)                   # True - because the data values are the same
 print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
-print('A in Alex', 'A' in 'Alex') # True - A found in the string
-print('B in Alex', 'B' in 'Alex') # False -there is no uppercase B
-print('coding' in 'coding for all') # True - because coding for all has the word coding
-print('a in an:', 'a' in 'an')      # True
-print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+print('A in Alex', 'A' in 'Alex')         # True - A found in the string
+print('B in Alex', 'B' in 'Alex')         # False -there is no uppercase B
+print('coding' in 'coding for all')       # True - because coding for all has the word coding
+print('a in an:', 'a' in 'an')            # True
+print('4 is 2 ** 2:', 4 is 2 ** 2)        # True
 
 print(3 > 2 and 4 > 3) # True - because both statements are true
 print(3 > 2 and 4 < 3) # False - because the second statement is false
@@ -121,3 +124,4 @@ print(not True)      # False - Negation, the not operator turns true to false
 print(not False)     # True
 print(not not True)  # True
 print(not not False) # False
+

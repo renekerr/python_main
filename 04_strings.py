@@ -30,18 +30,12 @@ print(len(letter))          # 1
 greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
 print(greeting)             # Hello, World!
 print(len(greeting))        # 13
-sentence = "I am enjoying 30 days of python challenge"
+sentence = "I am enjoying learning Python"
 print(sentence)
 
 # Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python.'''
-print(multiline_string)
-# Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python."""
+multiline_string = '''I am currently working as a DBA.
+Enjoying learing how to program using Python.'''
 print(multiline_string)
 
 # String Concatenation
@@ -49,7 +43,7 @@ first_name = 'Rene'
 last_name = 'Kerr'
 space = ' '
 full_name = first_name  +  space + last_name
-print('This is my full name: ', full_name) # Asabeneh Yetayeh
+print('This is my full name: ', full_name) 
 # Checking length of a string using len() builtin function
 print('Lenght of first_name = ',len(first_name))  # 8
 print('Lenght of last_name = ',len(last_name))   # 7
@@ -104,14 +98,12 @@ pto = language[0:6:2] #
 print(pto) # pto
 
 # Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you ?') # line break
-print('Days\tTopics\tExercises')
-print('Day 1\t3\t5')
-print('Day 2\t3\t5')
-print('Day 3\t3\t5')
-print('Day 4\t3\t5')
+print('I am studying German.\nDo you speak French?') # line break
+print('Country\tLanguage\t')
+print('Spain\tSpanish\t')
 print('This is a back slash  symbol (\\)') # To write a back slash
 print('In every programming language it starts with \"Hello, World!\"')
+
 
 ## String Methods
 # capitalize(): Converts the first character the string to Capital Letter
@@ -145,12 +137,12 @@ print(challenge.find('y'))  # 5
 print(challenge.find('th')) # 0
 
 # format()	formats string into nicer output    
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
+first_name = 'R'
+last_name = 'K'
+job = 'DBA'
+country = 'Spain'
 sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
-print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+print(sentence) 
 
 radius = 10
 pi = 3.14
@@ -160,8 +152,8 @@ print(result) # The area of circle with 10 is 314.0
 
 # index(): Returns the index of substring
 challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th')) # 0
+print(challenge.index('y'))  # 5
+print(challenge.index('th')) # 0
 
 # isalnum(): Checks alphanumeric character
 
@@ -183,12 +175,6 @@ challenge = 'thirty days of python'
 print(challenge.isalpha()) # True
 num = '123'
 print(num.isalpha())      # False
-
-# isdecimal(): Checks Decimal Characters
-
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th')) # 0
 
 # isdigit(): Checks Digit Characters
 
@@ -236,15 +222,28 @@ print('ten'.isnumeric())    # False
 
 # join(): Returns a concatenated string
 
-web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+web_tech = ['SQL', 'Linux', 'Snowflake', 'Powershell']
 result = '#, '.join(web_tech)
-print(result) # 'HTML# CSS# JavaScript# React'
+print(result)
+
+
+original_list = ['CSS', 'HTML']
+modified_list = ['#' + element for element in original_list]
+print(modified_list)
+
+
+original_list = ['CSS', 'HTML']
+modified_list = []
+for element in original_list:
+    modified_list.append(element +'#')
+print(modified_list)
+
+
 
 # strip(): Removes both leading and trailing characters
 
 challenge = ' thirty days of python '
-print(challenge.strip('y')) # 5
-
+print(challenge.strip())
 # replace(): Replaces substring inside
 
 challenge = 'thirty days of python'
@@ -275,8 +274,6 @@ challenge = '30 days of python'
 print(challenge.startswith('thirty')) # False
 
 
-
-## Brais Moure ejemplos y otras pruebas
 # Strings 
 
 var_string_00 = 'Javascript'
@@ -297,15 +294,6 @@ print(tab_string_00)
 scape_string_00 = "\\This is an example of string scaped\\"
 print(scape_string_00)
 
-# Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you?') # line break
-print('Days\tTopics\tExercises')
-print('Day 1\t3\t5')
-print('Day 2\t3\t5')
-print('Day 3\t3\t5')
-print('Day 4\t3\t5')
-print('This is a back slash  symbol (\\)') # To write a back slash
-print('In every programming language it starts with \"Hello, World!\"')
 
 ## Testing.....
  # Formatting strings
@@ -354,7 +342,6 @@ print(ones_language.lower().isupper())
 print(ones_language.startswith('Py'))
 print(ones_language.startswith('py'))
 print('Py' == 'py') # False
-
 
 
 language = 'English'
